@@ -1,0 +1,5 @@
+R:\Desktop\gitHUB\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\Forza4.csproj.AssemblyReference.cache
+R:\Desktop\gitHUB\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+R:\Desktop\gitHUB\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\App.g.cs
+R:\Desktop\gitHUB\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\Forza4_MarkupCompile.cache
+R:\Desktop\gitHUB\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\Forza4_MarkupCompile.lref
