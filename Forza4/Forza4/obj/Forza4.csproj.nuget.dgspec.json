@@ -1,28 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "R:\\Desktop\\gitHUB\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj": {}
+    "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj": {}
   },
   "projects": {
-    "R:\\Desktop\\gitHUB\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj": {
+    "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "R:\\Desktop\\gitHUB\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
+        "projectUniqueName": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
         "projectName": "Forza4",
-        "projectPath": "R:\\Desktop\\gitHUB\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
-        "packagesPath": "C:\\Users\\Bondesan_luca\\.nuget\\packages\\",
-        "outputPath": "R:\\Desktop\\gitHUB\\Forza4C-\\Forza4\\Forza4\\obj\\",
+        "projectPath": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
+        "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Bondesan_luca\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -64,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Forza4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="624" Width="1224">
+    <Grid HorizontalAlignment="Center" Width="1224">
         <Button HorizontalAlignment="Left" Margin="87,60,0,0" VerticalAlignment="Top"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="151,60,0,0" VerticalAlignment="Top"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="226,60,0,0" VerticalAlignment="Top"/>
@@ -16,7 +16,7 @@
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="457,60,0,0"/>
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="529,60,0,0"/>
         <Label Content="russo sei proprio cattivo e mi ruba i soldi&#xD;&#xA; &#xD;&#xA;" HorizontalAlignment="Left" Height="140" Margin="151,190,0,0" VerticalAlignment="Top" Width="362"/>
-        <Image Height="100" Width="100"/>
+        <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="729,190,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
