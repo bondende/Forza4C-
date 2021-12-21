@@ -8,15 +8,15 @@
         Title="MainWindow" Height="624" Width="1224">
     <Grid HorizontalAlignment="Center" Width="1224">
         <Button HorizontalAlignment="Left" Margin="87,60,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="151,60,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="226,60,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="302,60,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="6.241,0.157"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,60,0,0"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="457,60,0,0"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="529,60,0,0"/>
-        <Label Content="russo sei proprio cattivo e mi ruba i soldi&#xD;&#xA; &#xD;&#xA;" HorizontalAlignment="Left" Height="140" Margin="151,190,0,0" VerticalAlignment="Top" Width="362"/>
-        <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="729,190,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn6" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="849,50,0,0" Height="71" Width="84" Click="btn6_Click"/>
+        <Button x:Name="btn5" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="702,50,0,0" Height="71" Width="84" Click="btn5_Click"/>
+        <Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="558,50,0,0" Height="71" Width="84" Click="btn4_Click"/>
+        <Button x:Name="btn3" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,50,0,0" Height="71" Width="84" Click="btn3_Click"/>
+        <Button x:Name="btn2" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,50,0,0" Height="71" Width="84" Click="btn2_Click"/>
+        <Button x:Name="btn7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="996,50,0,0" Height="71" Width="84" Click="btn7_Click"/>
+        <Button x:Name="btn1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,50,0,0" Height="71" Width="84" Click="btn1_Click"/>
+        <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="462,356,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Height="135"/>
 
     </Grid>
 </Window>
