@@ -51,7 +51,7 @@ namespace Forza4
             catch (Exception e)
             {
                 NetworkInterfaceType _type = NetworkInterfaceType.Ethernet;
-                List indirizzi = new List();
+                List<string> indirizzi = new List<string>();
                 foreach (NetworkInterface item in NetworkInterface.GetAllNetworkInterfaces())
                 {
                     if (item.NetworkInterfaceType == _type && item.OperationalStatus == OperationalStatus.Up)
