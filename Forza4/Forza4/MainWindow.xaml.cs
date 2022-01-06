@@ -72,37 +72,40 @@ namespace Forza4
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(0);
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(1);
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(2);
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(3);
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(4);
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(5);
         }
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonClick.Invoke(6);
         }
+
+        public event ClickSuCasellaEventHandler ButtonClick;
+        public delegate void ClickSuCasellaEventHandler(int colonna);
     }
 }
