@@ -21,7 +21,7 @@ namespace Forza4
         public bool inserisciGettone(int n,int a)
         {
             bool errore = true;
-            for(int i = 0; i < 6; i++)
+            for(int i = 5; i >= 0&&errore; i--)
             {
                 if (griglia[a, i] == 0)
                 {
@@ -30,6 +30,20 @@ namespace Forza4
                 }
             }
             return errore;
+        }
+
+        public string getGriglia()
+        {
+            string tmp = "";
+            for(int i = 0; i < 6; i++)
+            {
+                for(int j = 0; j < 7; j++)
+                {
+                    tmp += griglia[j, i].ToString() + ";";
+                }
+                tmp += "\n";
+            }
+            return tmp;
         }
     }
 }

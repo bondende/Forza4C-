@@ -23,11 +23,10 @@ namespace Forza4
     /// </summary>
     public partial class MainWindow : Window
     {
-        Condivisa c;
-        forza4 f;
         public MainWindow()
         {
             InitializeComponent();
+            new Eventi(this);
             string[] ips = test();
             foreach (var item in ips)
             {
