@@ -26,6 +26,7 @@ namespace Forza4
         public MainWindow()
         {
             InitializeComponent();
+            btnRestart.Visibility = Visibility.Hidden;
             new Eventi(this);
             string[] ips = test();
             foreach (var item in ips)
@@ -106,5 +107,13 @@ namespace Forza4
 
         public event ClickSuCasellaEventHandler ButtonClick;
         public delegate void ClickSuCasellaEventHandler(int colonna);
+
+        private void btnRestart_Click(object sender, RoutedEventArgs e)
+        {
+            Restart.Invoke();
+        }
+
+        public event RestartEventHandler Restart;
+        public delegate void RestartEventHandler();
     }
 }

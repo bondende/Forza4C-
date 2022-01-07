@@ -17,6 +17,7 @@
         <Button x:Name="btn7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="996,50,0,0" Height="71" Width="84" Click="btn7_Click"/>
         <Button x:Name="btn1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,50,0,0" Height="71" Width="84" Click="btn1_Click"/>
         <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="462,356,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Height="135"/>
+        <Button x:Name="btnRestart" Content="restart" HorizontalAlignment="Left" Margin="951,478,0,0" VerticalAlignment="Top" Click="btnRestart_Click"/>
 
     </Grid>
 </Window>

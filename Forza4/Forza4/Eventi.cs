@@ -13,12 +13,27 @@ namespace Forza4
             forza = new forza4();
             this.m = m;
             m.ButtonClick += InserisciGettone;
+            m.Restart += Resetta;
         }
 
         private void InserisciGettone(int colonna)
         {
-            forza.inserisciGettone(1,colonna);
+            int turno = forza.getTurno();
+            forza.inserisciGettone(turno,colonna);
             m.txtGriglia.Text = forza.getGriglia();
+            if (forza.controlloVittoria())
+            {
+                m.txtGriglia.Text = "giocatore " + turno.ToString() + " ha vinto";
+                m.btnRestart.Visibility = System.Windows.Visibility.Visible;
+            }
+                
+        }
+
+        private void Resetta()
+        {
+            forza.svuota();
+            m.txtGriglia.Text = "";
+            m.btnRestart.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

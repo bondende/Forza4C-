@@ -7,7 +7,9 @@ namespace Forza4
     class forza4
     {
         int[,] griglia;
+        int turno;
         public forza4(){
+            turno = 2;
             griglia = new int[7, 6];
             for (int i=0;i<7;i++)
             {
@@ -16,6 +18,18 @@ namespace Forza4
                     griglia[i, j] = 0;
                 }
             }
+        }
+
+        public void svuota()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    griglia[i, j] = 0;
+                }
+            }
+            turno = 2;
         }
 
         public bool inserisciGettone(int n,int a)
@@ -32,6 +46,55 @@ namespace Forza4
             return errore;
         }
 
+        public bool controlloVittoria()
+        {
+            bool vittoria = false;
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if ((griglia[j, i]==1|| griglia[j, i]==2)&&griglia[j, i] == griglia[j + 1, i]&& griglia[j, i] == griglia[j + 2, i] && griglia[j, i] == griglia[j + 3, i])
+                        vittoria = true;
+                }
+            }
+            if (!vittoria)
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if ((griglia[j, i] == 1 || griglia[j, i] == 2) && griglia[j, i] == griglia[j, i + 1] && griglia[j, i] == griglia[j, i + 2] && griglia[j, i] == griglia[j, i + 3])
+                            vittoria = true;
+                    }
+                }
+            }
+            if (!vittoria)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if ((griglia[j, i] == 1 || griglia[j, i] == 2) && griglia[j, i] == griglia[j+1, i + 1] && griglia[j, i] == griglia[j+2, i + 2] && griglia[j, i] == griglia[j+3, i + 3])
+                            vittoria = true;
+                    }
+                }
+            }
+            if (!vittoria)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if ((griglia[j+3, i] == 1 || griglia[j+3, i] == 2) && griglia[j+3, i] == griglia[j + 2, i + 1] && griglia[j+3, i] == griglia[j + 1, i + 2] && griglia[j+3, i] == griglia[j, i + 3])
+                            vittoria = true;
+                    }
+                }
+            }
+
+
+            return vittoria;
+        }
+
         public string getGriglia()
         {
             string tmp = "";
@@ -44,6 +107,15 @@ namespace Forza4
                 tmp += "\n";
             }
             return tmp;
+        }
+
+        public int getTurno()
+        {
+            if (turno == 1)
+                turno = 2;
+            else
+                turno = 1;
+            return turno;
         }
     }
 }
