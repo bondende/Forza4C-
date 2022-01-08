@@ -8,7 +8,7 @@
         Title="MainWindow" Height="624" Width="1224">
     <Grid HorizontalAlignment="Center" Width="1224">
         <Button HorizontalAlignment="Left" Margin="87,60,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn6" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="849,50,0,0" Height="71" Width="84" Click="btn6_Click"/>
         <Button x:Name="btn5" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="702,50,0,0" Height="71" Width="84" Click="btn5_Click"/>
         <Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="558,50,0,0" Height="71" Width="84" Click="btn4_Click"/>
@@ -18,6 +18,7 @@
         <Button x:Name="btn1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,50,0,0" Height="71" Width="84" Click="btn1_Click"/>
         <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="462,356,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Height="135"/>
         <Button x:Name="btnRestart" Content="restart" HorizontalAlignment="Left" Margin="951,478,0,0" VerticalAlignment="Top" Click="btnRestart_Click"/>
+        <TextBox x:Name="txtIpAvv" HorizontalAlignment="Left" Margin="1024,19,0,0" Text="Inserire avversario" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

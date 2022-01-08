@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,13 +27,18 @@ namespace Forza4
         public MainWindow()
         {
             InitializeComponent();
+            Condivisa c = new Condivisa();
+            Connessione connect = new Connessione(ref c);
+            Thread tRicezione = new Thread(new ThreadStart(connect.Ricezione));
+            tRicezione.Start();
             btnRestart.Visibility = Visibility.Hidden;
-            new Eventi(this);
+            new Eventi(this,connect);
             string[] ips = test();
             foreach (var item in ips)
             {
                 txtip.Text += item + "\r\n";
             }
+
         }
         
         public static string[] test()

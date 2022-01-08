@@ -1,20 +1,20 @@
 ﻿Forza4
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\lucab\OneDrive\Desktop\github\Forza4C-\Forza4\Forza4\obj\Debug\netcoreapp3.1\
+C:\Users\lucab\OneDrive\Desktop\github\Forza4C-\Forza4\Forza4\obj\Release\netcoreapp3.1\
 Forza4
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\lucab\OneDrive\Desktop\github\Forza4C-\Forza4\Forza4\App.xaml
 11151548125
 
-9292382187
+7-1862312194
 1921654412462
 MainWindow.xaml;
 
-False
+True
 

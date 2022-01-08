@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\matte\\.nuget\\packages\\": {}
+    "C:\\Users\\lucab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
+      "projectUniqueName": "C:\\Users\\lucab\\OneDrive\\Desktop\\github\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
       "projectName": "Forza4",
-      "projectPath": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
-      "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matte\\OneDrive\\Desktop\\Forza4C-\\Forza4\\Forza4\\obj\\",
+      "projectPath": "C:\\Users\\lucab\\OneDrive\\Desktop\\github\\Forza4C-\\Forza4\\Forza4\\Forza4.csproj",
+      "packagesPath": "C:\\Users\\lucab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucab\\OneDrive\\Desktop\\github\\Forza4C-\\Forza4\\Forza4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
