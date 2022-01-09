@@ -27,12 +27,14 @@ namespace Forza4
         public MainWindow()
         {
             InitializeComponent();
+            /*
             Condivisa c = new Condivisa();
             Connessione connect = new Connessione(ref c);
             Thread tRicezione = new Thread(new ThreadStart(connect.Ricezione));
             tRicezione.Start();
+            */
             btnRestart.Visibility = Visibility.Hidden;
-            new Eventi(this,connect);
+            new Eventi(this/*,connect*/);
             string[] ips = test();
             foreach (var item in ips)
             {

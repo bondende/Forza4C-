@@ -7,13 +7,26 @@ namespace Forza4
     class forza4
     {
         int[,] griglia;
-        int turno;
+        partita p;
+
         public forza4(){
-            turno = 2;
             griglia = new int[7, 6];
             for (int i=0;i<7;i++)
             {
                 for (int j=0;j<6;j++)
+                {
+                    griglia[i, j] = 0;
+                }
+            }
+        }
+
+        public forza4(ref partita p)
+        {
+            this.p = p;
+            griglia = new int[7, 6];
+            for (int i = 0; i < 7; i++)
+            {
+                for (int j = 0; j < 6; j++)
                 {
                     griglia[i, j] = 0;
                 }
@@ -29,7 +42,7 @@ namespace Forza4
                     griglia[i, j] = 0;
                 }
             }
-            turno = 2;
+            p.resetTurno();
         }
 
         public bool inserisciGettone(int n,int a)
@@ -109,13 +122,5 @@ namespace Forza4
             return tmp;
         }
 
-        public int getTurno()
-        {
-            if (turno == 1)
-                turno = 2;
-            else
-                turno = 1;
-            return turno;
-        }
     }
 }

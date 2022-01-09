@@ -16,9 +16,10 @@
         <Button x:Name="btn2" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,50,0,0" Height="71" Width="84" Click="btn2_Click"/>
         <Button x:Name="btn7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="996,50,0,0" Height="71" Width="84" Click="btn7_Click"/>
         <Button x:Name="btn1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,50,0,0" Height="71" Width="84" Click="btn1_Click"/>
-        <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="462,356,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Height="135"/>
+        <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="36,450,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="134"/>
         <Button x:Name="btnRestart" Content="restart" HorizontalAlignment="Left" Margin="951,478,0,0" VerticalAlignment="Top" Click="btnRestart_Click"/>
         <TextBox x:Name="txtIpAvv" HorizontalAlignment="Left" Margin="1024,19,0,0" Text="Inserire avversario" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Canvas/>
 
     </Grid>
 </Window>

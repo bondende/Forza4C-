@@ -8,40 +8,49 @@ namespace Forza4
     {
         MainWindow m;
         forza4 forza;
-        Connessione connect;
-        public Eventi(MainWindow m,Connessione connect)
+        partita p;
+        //Connessione connect;
+        public Eventi(MainWindow m/*,Connessione connect*/)
         {
-            forza = new forza4();
+            p = new partita(1, 2);
+            forza = new forza4(ref p);
             this.m = m;
-            this.connect = connect;
+            //this.connect = connect;
             m.ButtonClick += InserisciGettone;
             m.Restart += Resetta;
-            connect.Start += Start;
+            //connect.Start += Start;
         }
 
         private void InserisciGettone(int colonna)
         {
-            int turno = forza.getTurno();
-            forza.inserisciGettone(turno, colonna);
+            bool turno = p.getTurno();
+            if(turno)
+                forza.inserisciGettone(1, colonna);
+            else
+                forza.inserisciGettone(2, colonna);
+
             m.txtGriglia.Text = forza.getGriglia();
             if (forza.controlloVittoria())
             {
-                m.txtGriglia.Text = "giocatore " + turno.ToString() + " ha vinto";
+                if(turno)
+                    m.txtGriglia.Text = p.getPlayer1Name() + " ha vinto";
+                else
+                    m.txtGriglia.Text = p.getPlayer2Name() + " ha vinto";
                 m.btnRestart.Visibility = System.Windows.Visibility.Visible;
             }
 
         }
-
+        
         private void Resetta()
         {
             forza.svuota();
             m.txtGriglia.Text = "";
             m.btnRestart.Visibility = System.Windows.Visibility.Hidden;
         }
-
+        /*
         private void Start()
         {
            
-        }
+        }*/
     }
 }
