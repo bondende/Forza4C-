@@ -22,6 +22,8 @@ namespace Forza4
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -33,8 +35,8 @@ namespace Forza4
             Thread tRicezione = new Thread(new ThreadStart(connect.Ricezione));
             tRicezione.Start();
             */
-            btnRestart.Visibility = Visibility.Hidden;
             new Eventi(this/*,connect*/);
+            DrawCanvas.Invoke();
             string[] ips = test();
             foreach (var item in ips)
             {
@@ -42,7 +44,7 @@ namespace Forza4
             }
 
         }
-        
+
         public static string[] test()
         {
             try
@@ -123,5 +125,9 @@ namespace Forza4
 
         public event RestartEventHandler Restart;
         public delegate void RestartEventHandler();
+
+        public event DisegnaCanvas DrawCanvas;
+        public delegate void DisegnaCanvas();
+
     }
 }

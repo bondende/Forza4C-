@@ -5,21 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Forza4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="624" Width="1224">
-    <Grid HorizontalAlignment="Center" Width="1224">
-        <Button HorizontalAlignment="Left" Margin="87,60,0,0" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="661" Width="1224">
+    <Grid HorizontalAlignment="Center" Width="1224" Margin="0,0,0,-6" Background="LightYellow">
         <TextBox x:Name="txtip" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn6" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="849,50,0,0" Height="71" Width="84" Click="btn6_Click"/>
-        <Button x:Name="btn5" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="702,50,0,0" Height="71" Width="84" Click="btn5_Click"/>
-        <Button x:Name="btn4" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="558,50,0,0" Height="71" Width="84" Click="btn4_Click"/>
-        <Button x:Name="btn3" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,50,0,0" Height="71" Width="84" Click="btn3_Click"/>
-        <Button x:Name="btn2" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,50,0,0" Height="71" Width="84" Click="btn2_Click"/>
-        <Button x:Name="btn7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="996,50,0,0" Height="71" Width="84" Click="btn7_Click"/>
-        <Button x:Name="btn1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,50,0,0" Height="71" Width="84" Click="btn1_Click"/>
-        <TextBox x:Name="txtGriglia" HorizontalAlignment="Left" Margin="36,450,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="134"/>
-        <Button x:Name="btnRestart" Content="restart" HorizontalAlignment="Left" Margin="951,478,0,0" VerticalAlignment="Top" Click="btnRestart_Click"/>
-        <TextBox x:Name="txtIpAvv" HorizontalAlignment="Left" Margin="1024,19,0,0" Text="Inserire avversario" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Canvas/>
+        <TextBox x:Name="txtIpAvv" HorizontalAlignment="Left" Margin="1070,19,0,0" Text="Inserire avversario" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Canvas x:Name="gridCanvas" Width="1224" Margin="0,161,0,78">
+        </Canvas>
+        <TextBox x:Name="txtVittoria" TextWrapping="Wrap" IsReadOnly="True" Visibility="Hidden" Margin="524,219,523,325" HorizontalAlignment="Center" FontSize="20"/>
+        <Button x:Name="btn1" Content="" HorizontalAlignment="Left" Margin="380,132,0,0" VerticalAlignment="Top" Click="btn1_Click" Width="40"/>
+        <Button x:Name="btn6" Content="" HorizontalAlignment="Left" Margin="733,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.025,0.954" Click="btn6_Click" Width="40"/>
+        <Button x:Name="btn5" Content="" HorizontalAlignment="Left" Margin="661,132,0,0" VerticalAlignment="Top" Click="btn5_Click" Width="40"/>
+        <Button x:Name="btn4" Content="" HorizontalAlignment="Center" Margin="0,132,0,0" VerticalAlignment="Top" Click="btn4_Click" Width="40"/>
+        <Button x:Name="btn3" Content="" HorizontalAlignment="Left" Margin="524,132,0,0" VerticalAlignment="Top" Click="btn3_Click" Width="40"/>
+        <Button x:Name="btn2" Content="" HorizontalAlignment="Left" Margin="452,132,0,0" VerticalAlignment="Top" Click="btn2_Click" Width="40"/>
+        <Button x:Name="btn7" Content="" HorizontalAlignment="Left" Margin="803,132,0,0" VerticalAlignment="Top" Click="btn7_Click" Width="40"/>
+        <Button x:Name="btnReset" Content="RESTART" HorizontalAlignment="Center" Margin="0,347,0,0" VerticalAlignment="Top" Click="btnRestart_Click" Height="41" Width="96" Visibility="Hidden" HorizontalContentAlignment="Center"/>
+        <TextBlock x:Name="nome2" HorizontalAlignment="Left" Margin="910,219,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="294" TextAlignment="Center"/>
+        <TextBlock x:Name="nome1" HorizontalAlignment="Left" Margin="21,219,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="294" TextAlignment="Center"/>
 
     </Grid>
 </Window>

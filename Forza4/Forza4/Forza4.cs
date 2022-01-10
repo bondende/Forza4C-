@@ -1,15 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Media;
 
 namespace Forza4
 {
     class forza4
     {
         int[,] griglia;
-        partita p;
+        public int ultimoX;
+        public int ultimoY;
+        public bool turno;
+        SolidColorBrush colore1;
+        SolidColorBrush colore2;
+        string player1;
+        string player2;
 
+       
         public forza4(){
+            ultimoX = 0;
+            ultimoY = 0;
+            turno = true;
+            colore1 = null;
+            colore2 = null;
+            player1 = "";
+            player2 = "";
             griglia = new int[7, 6];
             for (int i=0;i<7;i++)
             {
@@ -20,9 +35,15 @@ namespace Forza4
             }
         }
 
-        public forza4(ref partita p)
+        public forza4(SolidColorBrush a, SolidColorBrush b)
         {
-            this.p = p;
+            ultimoX = 0;
+            ultimoY = 0;
+            turno = true;
+            colore1 = a;
+            colore2 = b;
+            player1 = "giocatore 1";
+            player2 = "giocatore 2";
             griglia = new int[7, 6];
             for (int i = 0; i < 7; i++)
             {
@@ -31,6 +52,38 @@ namespace Forza4
                     griglia[i, j] = 0;
                 }
             }
+        }
+
+        public bool getTurno()
+        {
+            bool tmp = turno;
+            turno = !turno;
+            return tmp;
+        }
+
+        public SolidColorBrush getColore1()
+        {
+            return colore1;
+        }
+
+        public SolidColorBrush getColore2()
+        {
+            return colore2;
+        }
+
+        public void resetTurno()
+        {
+            turno = true;
+        }
+
+        public string getPlayer1Name()
+        {
+            return player1;
+        }
+
+        public string getPlayer2Name()
+        {
+            return player2;
         }
 
         public void svuota()
@@ -42,17 +95,19 @@ namespace Forza4
                     griglia[i, j] = 0;
                 }
             }
-            p.resetTurno();
+            resetTurno();
         }
 
-        public bool inserisciGettone(int n,int a)
+        public bool inserisciGettone(int n,int j)
         {
             bool errore = true;
             for(int i = 5; i >= 0&&errore; i--)
             {
-                if (griglia[a, i] == 0)
+                if (griglia[j, i] == 0)
                 {
-                    griglia[a, i] = n;
+                    griglia[j, i] = n;
+                    ultimoX = j;
+                    ultimoY = i;
                     errore = false;
                 }
             }
