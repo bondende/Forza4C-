@@ -64,9 +64,9 @@ namespace Forza4
                     vittoria = true;
                     m.txtVittoria.Visibility = System.Windows.Visibility.Visible;
                     if (turno)
-                        m.txtVittoria.Text = forza.getPlayer1Name() + "ha vinto";
+                        m.txtVittoria.Text = forza.getPlayer1Name() + " ha vinto";
                     else
-                        m.txtVittoria.Text = forza.getPlayer2Name() + "ha vinto";
+                        m.txtVittoria.Text = forza.getPlayer2Name() + " ha vinto";
                     m.btnReset.Visibility = System.Windows.Visibility.Visible;
                 }
             }
